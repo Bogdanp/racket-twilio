@@ -78,7 +78,7 @@
       (log-twilio-debug "received response status ~v" status-code)
 
       (define response (read-json in))
-      (unless (= status-code 200)
+      (when (>= status-code 400)
         (raise (exn:fail:twilio
                 (hash-ref response 'message)
                 (current-continuation-marks)
