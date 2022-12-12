@@ -15,3 +15,7 @@ A tiny Twilio client for racket.
                      #:from "+15551231234"
                      #:body "Hello!")
 ```
+
+## License
+
+    racket-twilio is licensed under the 3-Clause BSD license.
